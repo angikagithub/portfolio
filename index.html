@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Add custom styles here */
+    .about-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+    .about-section img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      /*border: 5px solid #007BFF; /* Primary color for the border */
+    }
+    .about-section .content {
+      max-width: 600px;
+      margin: 20px auto 0;
+    }
+
+  .projects-section {
+    padding: 50px 0;
+  }
+  .projects-section .card {
+    margin: 0 auto; /* Center the cards */
+  }
+  .projects-section .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .projects-section .card-body {
+    text-align: center;
+  }
+  .projects-section .btn {
+    margin: 5px; /* Space between buttons */
+  }
+  
+  .skills-section {
+    padding: 50px 0;
+  }
+  .skills-section .card {
+    margin: 0 auto; /* Center the cards */
+    width: 100%;
+  }
+  .skills-section .card img {
+    width: 50px;
+    height: 50px;
+  }
+  .skills-section .card-body {
+    text-align: center;
+  }
+  .skills-section .btn {
+    margin: 10px 0; /* Space between button and text */
+  }
+  
+  .contact-section {
+    background-color: #343a40; /* Dark background */
+    padding: 50px 0;
+  }
+  .contact-section p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #adb5db; /*Light grey color*/
+  }
+  .social-icon img {
+    /*background-color: #ff4081; /* Pink background */
+    padding: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+  }
+  .social-icon img:hover {
+    transform: scale(1.1);
+  }
+  .social-icon img:focus {
+    outline: none;
+  }
+  .contact-section .social-icon {
+    margin: 0 10px;
+  }
+  .contact-section .social-icon img {
+    cursor: pointer;
+  }
+
+
+  body {
+    padding-top: 70px; /* Ensure the content is not hidden behind the navbar */
+  }
+  .navbar-nav .nav-link {
+    cursor: pointer;
+  }
+
+
+
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+  <div class="container">
+    <!-- Your existing content here -->
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h1>About Me</h1>
+      <img src="C:\Users\Admin\Data Science Portfolio\images\about\me2.jpg" alt="Profile Image">
+      <div class="content">
+        <p>Hello! I'm Angika Roy, a passionate and dedicated <b>Data Analyst</b> with a love for unraveling the mysteries hidden within data. With a background in <b>computer science</b> and extensive experience in data analysis, I thrive on transforming complex datasets into actionable insights.</p>
+        <p>My journey into the world of coding started during my 9th grade in school. I honed my skills in various programming languages - <b>Java, C, C++, Python</b>.</p>
+        <p>I have more than 5 years of extensive industry experience both <b>National and International</b>. I started my career as a <b>System Engineer</b> and finally ended up as a <b>Business Analyst</b> after pursing <b>PGDM in Marketing</b>.<br> This helped me to deal in the <b>Tech - Functional roles</b> and collaborated in million dollar deals with <b>Stratgeic planning and management team</b>.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="text-center my-5">Projects</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\projects\T20.jpeg" class="card-img-top" alt="Project 1 Image">
+              <div class="card-body">
+                <h5 class="card-title">EDA T20 World Cup Summary Analysis</h5>
+                <p class="card-text"> <b>Summary of T20 World Cup 2022</b>        
+                 <br>
+                  England won the most number of matches <br>
+                  Virat Kohli scored highest in the most number of matches <br>
+                  Sam Curran was the best bowler <br>
+                  More teams won by batting first<br>
+                  More teams decided to bat first <br>
+                  SCG was the best stadium to bat first <br>
+                  SCG was the top venue for defending targets<br>
+                  The Optus Stadium was the best stadium to bowl first <br></p>
+                 
+                <a href="https://github.com/angikagithub/DataAnalysis_Projects/tree/main/EDA_T20_WorldCup_Summary_Analysis" class="btn btn-primary">See More</a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\projects\Stock.jfif" class="card-img-top" alt="Project 2 Image">
+              <div class="card-body">
+                <h5 class="card-title">Stock Market Analysis</h5>
+                <p class="card-text"> Here I examined stock market statistics, especially related to a few technological stocks (Apple, Amazon, Google, and Microsoft).
+                    Here the dataset is live and have retrieved stock information from <b>yfinance</b> and utilize <b>Seaborn and Matplotlib</b> to display various parts of it. Used many methods for assessing a stock's risk based on its historical performance. 
+                    Also used the Long Short Term Memory (LSTM) approach to forecast future stock values!</p>
+                <a href="https://github.com/angikagithub/DataAnalysis_Projects/tree/main/Stock_Market_Analysis" class="btn btn-primary">See More</a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\projects\Atliq2.png" class="card-img-top" alt="Project 3 Image">
+              <div class="card-body">
+                <h5 class="card-title">Atliq Hardware Consumer Goods Analysis</h5>
+                <p class="card-text">Atliq Hardwares, which is a computer hardware supplier and perpherals to many of their clients across India.
+                  The case study is based on a computer hardware business which is facing challenges in dynamically changing market. 
+                  The sales director is facing issues in terms of tracking the sales in this dynamically growing market, so he has the Regional Managers for North India, South India and Central India. 
+                  Sales director decides to invest in data analysis project and he would like to build <b>power BI dashboard</b> that can give him real time sales insights.
+                </p>
+                <a href="https://github.com/angikagithub/DataAnalysis_Projects/tree/main/Sales_Insight" class="btn btn-primary">See More</a>
+                
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\projects\AQI India.jfif" class="card-img-top" alt="Project 4 Image">
+              <div class="card-body">
+                <h5 class="card-title">AQI of India 2015 to 2020</h5>
+                <p class="card-text">This project analyses the Air Quality Index of various states in India from 2015 to 2020 based on
+                  various pollutants. I performed a Data Visualization using <b>PowerBI</b> to interpret various factors like <b>Top 5 Polluted Cities based on CO, NO2, SO2, PM10, PM2.5, Ammonia, Ozone, Benzene, Toluene and Xylene</b>
+                </p>
+                <a href="https://github.com/angikagithub/DataAnalysis_Projects/tree/main/AQI_of_India_2015_to_2020_in_PowerBI" class="btn btn-primary">See More</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="skills" class="skills-section">
+        <h2 class="text-center my-5">Skills</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card text-center">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\skills\1.png" class="card-img-top mx-auto mt-3" alt="Python Icon" style="width: 50px; height: 50px;">
+              <div class="card-body">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text"><b>Pandas | NumPy | Seaborn | Matplotlib | Plotly | Sklearn</b></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card text-center">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\skills\2.png" class="card-img-top mx-auto mt-3" alt="Data Visualization Icon" style="width: 50px; height: 50px;">
+              <div class="card-body">
+                <h5 class="card-title">Data Visualization</h5>
+                <p class="card-text"><b>Tableau |</b> <b>PowerBI</b></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card text-center">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\skills\3.png" class="card-img-top mx-auto mt-3" alt="SQL Icon" style="width: 50px; height: 50px;">
+              <div class="card-body">
+                <h5 class="card-title">SQL</h5>
+                <p class="card-text"><b>MySQL</b></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card text-center">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\skills\Agile.png" class="card-img-top mx-auto mt-3" alt="Agile Icon" style="width: 50px; height: 50px;">
+              <div class="card-body">
+                <h5 class="card-title">Agile Methodologies</h5>
+                <p class="card-text"><b>JIRA | Azure DevOps</b></p>
+     
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card text-center">
+              <img src="C:\Users\Admin\Data Science Portfolio\images\skills\bpm.jpg" class="card-img-top mx-auto mt-3" alt="BPM Icon" style="width: 50px; height: 50px;">
+              <div class="card-body">
+                <h5 class="card-title">Cordys</h5>
+                <p class="card-text"><b>Business Process Model</b></p>
+     
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-section text-white">
+        <h2 class="text-center my-5">Contact Me</h2>
+        <div class="container">
+          <div class="row justify-content-center mb-4">
+            <div class="col-md-4 text-center">
+              <p><i class="fas fa-envelope"></i> angikaroy.official@gmail.com</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <p><i class="fas fa-phone"></i> +91 9007062115 (IND) <br> <i class="fas fa-phone"></i> +82 0103276-2444 (SK)</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-1 text-center">
+              <a href="https://www.linkedin.com/in/angikaroy/" target="_blank" class="social-icon" data-toggle="tooltip" title="LinkedIn">
+                <img src="C:\Users\Admin\Data Science Portfolio\icons\LinkedIn_logo_initials.png" alt="LinkedIn" class="img-fluid rounded-circle">
+              </a>
+            </div>
+            <!--<div class="col-md-1 text-center">
+              <a href="https://www.twitter.com" target="_blank" class="social-icon" data-toggle="tooltip" title="Twitter">
+                <img src="icons/twitter.png" alt="Twitter" class="img-fluid rounded-circle">
+              </a>
+            </div>-->
+            <div class="col-md-1 text-center">
+              <a href="https://github.com/angikagithub/DataAnalysis_Projects" target="_blank" class="social-icon" data-toggle="tooltip" title="GitHub">
+                <img src="C:\Users\Admin\Data Science Portfolio\icons\github.png" alt="GitHub" class="img-fluid rounded-circle">
+              </a>
+            </div>
+            <!--<div class="col-md-1 text-center">
+              <a href="https://www.medium.com" target="_blank" class="social-icon" data-toggle="tooltip" title="Medium">
+                <img src="icons/medium.png" alt="Medium" class="img-fluid rounded-circle">
+              </a>
+            </div>
+            <div class="col-md-1 text-center">
+              <a href="https://www.youtube.com" target="_blank" class="social-icon" data-toggle="tooltip" title="YouTube">
+                <img src="icons/youtube.png" alt="YouTube" class="img-fluid rounded-circle">
+              </a>
+            </div>-->
+          </div>
+        </div>
+      </section>
+      
+    <!-- Your additional content here -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>
